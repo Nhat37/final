@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgfood"
+            android:layout_width="132dp"
+            android:layout_height="100dp"
+            android:background="@drawable/humber"
+
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imgfood"
+            android:gravity="center"
+            android:text="Humberger"
+            android:textFontWeight="30"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40.000"
+            android:layout_below="@+id/name"
+            android:layout_alignStart="@+id/name"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VND"
+            android:layout_toRightOf="@+id/cart"
+            android:layout_alignBottom="@+id/cart"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy"
+            android:id="@+id/btnbuy"
+            android:layout_toRightOf="@id/name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
